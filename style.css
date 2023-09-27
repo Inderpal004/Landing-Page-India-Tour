@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Ubuntu&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('bg.jpg')center center;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.left-nav{
+    width: 20%;
+    text-align: center;
+}
+
+.right-nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+.right-nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.right-nav a:first-child{
+    color: rgb(28, 214, 127);
+}
+
+main{
+    color: white;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p{
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px black;
+}
+
+.firstpara{
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+}
+
+.secondpara{
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+main h1{
+    text-transform: uppercase;
+    word-spacing: 3px;
+    font-size: 2.5rem;
+    text-shadow: 2px 1px 4px black;
+    margin: 17px 0px;
+}
+
+.change-content::after{
+    content: "";
+    animation: changetext 15s linear infinite;
+    color: rgb(28, 214, 127);
+}
+
+@keyframes changetext{
+    0%{content: "BARNALA";}
+    10%{content: "DELHI";}
+    20%{content: "MUMBAI";}
+    30%{content: "AMRITSAR";}
+    40%{content: "AGRA";}
+    50%{content: "MAHARASTRA";}
+    60%{content: "UTTRAKHAND";}
+    70%{content: "HYDRABAD";}
+    80%{content: "MANIPUR";}
+    90%{content: "RAJASTHAN";}
+    100%{content: "GUJRAT";}
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin: 17px 14px;
+    transition: all 0.5s ease;
+}
+
+.btn-1{
+    color: black;
+    background: white;
+}
+
+.btn-1:hover{
+    color: white;
+    background: rgb(26, 158, 96);
+}
+
+.btn-2{
+    color: white;
+    background: rgb(26, 158, 96);
+}
+
+.btn-2:hover{
+    color: black;
+    background: white;
+}
